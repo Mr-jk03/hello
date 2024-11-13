@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.bx {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 550px;
+    width: 350px;
+    background-color: #b54f4d;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 350px;
+    width: 300px;
+}
+
+.alex-brush-regular {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-family: "Alex Brush", cursive;
+    font-style: normal;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.typing-text {
+    display: inline-block;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.img {
+    height: 280px;
+    width: 100%;
+}
+
+.img img {
+    height: auto;
+    width: 100%;
+}
+
+.img-element {
+    width: 0;
+    opacity: 0;
+    transition: width 2s ease, opacity 2s ease;
+}
+
+/* Khi có class 'show', ảnh sẽ chuyển sang trạng thái lớn và rõ */
+.img-element.show {
+    width: 100%; /* Điều chỉnh kích thước ảnh */
+    opacity: 1;
+}
+
+.btn {
+    height: 40px;
+    width: 100%;
+    display: none; /* Ẩn nút mặc định */
+}
+
+.btn-read {
+    height: 35px;
+    width: 120px;
+    border-radius: 15px;
+    border: 2px none;
+    background-image: linear-gradient(to right, #de3f3c, #ff7f50);
+    box-shadow: 0px 3px 4px #922321;
+    
+    font-weight: bold;
+    transition: opacity 1s ease-in-out; /* Thêm hiệu ứng mờ dần khi hiển thị */
+}
+.btn-read a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-read a:hover{
+    color: #fdfaf9;
+}
+
+
+/*content*/
+
+.box-content{
+    height: 470px;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: -7px;
+    left: -26px;
+    height: 35px;
+    width: 217px;
+    background-color: rgb(217, 5, 5);
+    border-bottom-right-radius: 17px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 2px 2px 35px;
+}
+
+.title span{
+    font-family: "Alex Brush", cursive;
+    font-style: normal;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.tg{
+    position: absolute;
+    top: 28px;
+    left: -25px;
+    height: 0;
+    width: 0;
+    border-right: 34px solid rgb(142, 4, 4);
+    border-bottom: 15px solid transparent;
+}
+.rose{
+    position: absolute;
+    top: -35px;
+    right: 40px;
+    height: 70px;
+    width: 50px;
+}
+.rose img{
+    height: auto;
+    width: 100%;
+    transform: rotate(45deg);
+}
+.btn-read-email{
+    height: 40px;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-read-email button{
+    height: 100%;
+    width: 120px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 3px 4px #de3f3c;
+    background-image: linear-gradient(to right, #de3f3c, #ff7f50);
+}
+
+#thu {
+    display: none; /* Phần tử ban đầu ẩn */
+    transform: translateY(-100px); /* Di chuyển phần tử lên 100px so với vị trí ban đầu */
+    opacity: 0; /* Phần tử ban đầu có độ mờ */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; 
+}
+
+.speech{
+    margin-top: 5px;
+    padding-left: 15px;
+}
+.main-content{
+    height: auto;
+    width: 100%;
+    margin: 35px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alex Brush", cursive;
+    font-style: normal;
+    font-size: 20px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.queen{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#lq{
+    font-family: "Alex Brush", cursive;
+    font-style: normal;
+    font-weight: bold;
+    color: #050505;
+    font-size: 20px;
+    transform: translateX(-222px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; 
+}
