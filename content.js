@@ -12,3 +12,6 @@ const lq = document.getElementById('lq')
             lq.style.opacity = 1;
         }, 4000)
     }
+
+const music = document.getElementById('background-music')
+music.play()
